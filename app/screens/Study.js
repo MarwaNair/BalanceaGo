@@ -2,17 +2,16 @@ import React from 'react';
 import styled from 'styled-components/native';
 
 const Container = styled.View`
-  background: #2d9cdb;
   flex: 1;
 `;
 const Text = styled.Text``;
 
-function Menu() {
+function Study() {
   return (
     <Container>
-      <Text>Menu</Text>
+      <Text>Study</Text>
     </Container>
   );
 }
 
-export default Menu;
+export default Study;

@@ -6,12 +6,12 @@ const Container = styled.View`
 `;
 const Text = styled.Text``;
 
-function Home() {
+function Direct() {
   return (
     <Container>
-      <Text>Home</Text>
+      <Text>Direct</Text>
     </Container>
   );
 }
 
-export default Home;
+export default Direct;

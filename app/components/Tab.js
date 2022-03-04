@@ -5,17 +5,19 @@ import {Transition, Transitioning} from 'react-native-reanimated';
 import Images from '../images';
 
 const bgColors = {
-  home: '#ffe1c5',
-  logger: '#e5c1e5',
-  documents: '#d7d8f8',
-  menu: '#bce3fa',
+  home: '#3196E2',
+  search: '#3196E2  ',
+  dashboard: '#3196E2  ',
+  direct: '#3196E2  ',
+  study: '#3196E2  ',
 };
 
 const textColors = {
-  home: '#c56b14',
-  logger: '#f37ff3',
-  documents: '#4b458c',
-  menu: '#2d9cdb',
+  home: '#FFFFFF',
+  search: '#FFFFFF',
+  dashboard: '#FFFFFF',
+  direct: '#FFFFFF',
+  study: '#FFFFFF',
 };
 
 const Container = styled.TouchableWithoutFeedback``;
@@ -30,8 +32,8 @@ const Background = styled(Transitioning.View)`
   margin: 6px;
 `;
 const Icon = styled.Image`
-  height: 24px;
-  width: 24px;
+  height: 20px;
+  width: 20px;
 `;
 
 const Label = styled.Text`

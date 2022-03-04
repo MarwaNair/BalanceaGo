@@ -3,9 +3,10 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import Home from './screens/Home';
-import Logger from './screens/Logger';
-import Documents from './screens/Documents';
-import Menu from './screens/Menu';
+import Search from './screens/Search';
+import Dashboard from './screens/Dashboard';
+import Direct from './screens/Direct';
+import Study from './screens/Study';
 
 import TabComponent from './components/Tab';
 
@@ -23,26 +24,33 @@ function App() {
           }}
         />
         <Tab.Screen
-          name="Logger"
-          component={Logger}
+          name="Search"
+          component={Search}
           options={{
-            tabBarButton: (props) => <TabComponent label="logger" {...props} />,
+            tabBarButton: (props) => <TabComponent label="search" {...props} />,
           }}
         />
         <Tab.Screen
-          name="Documents"
-          component={Documents}
+          name="Dashboard"
+          component={Dashboard}
           options={{
             tabBarButton: (props) => (
-              <TabComponent label="documents" {...props} />
+              <TabComponent label="dashboard" {...props} />
             ),
           }}
         />
         <Tab.Screen
-          name="Menu"
-          component={Menu}
+          name="Direct"
+          component={Direct}
           options={{
-            tabBarButton: (props) => <TabComponent label="menu" {...props} />,
+            tabBarButton: (props) => <TabComponent label="direct" {...props} />,
+          }}
+        />
+        <Tab.Screen
+          name="Study"
+          component={Study}
+          options={{
+            tabBarButton: (props) => <TabComponent label="study" {...props} />,
           }}
         />
       </Tab.Navigator>
