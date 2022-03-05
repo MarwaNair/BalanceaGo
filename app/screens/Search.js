@@ -92,7 +92,7 @@ function Search() {
     return (
       <View
         style={{
-          height: 50,
+          height: 5,
           width: 1,
           backgroundColor: "white",
         }}
@@ -100,7 +100,7 @@ function Search() {
     );
   }
   return (
-    <Container>
+    <Container >
       
         <SafeAreaView style={styles.MainContainer}>
          <View style={styles.header}>
@@ -211,7 +211,7 @@ const styles = StyleSheet.create({
   },
   flatlist: {
     alignItems: 'center',
-    padding: 10
+    
   },
   comp: {
     color: '#2485CE'
