@@ -204,7 +204,7 @@ function Home() {
             horizontal={true}
             />
      <View style={styles.containerr}>
-         <View style={styles.card}>
+         <View style={[styles.card,{backgroundColor:'#F35548'}]}>
           <View style={styles.topCard}>
           <View style={styles.avatar}>
             <Image
@@ -212,14 +212,13 @@ function Home() {
                 height: 45,
                 width: 45
               }}
-              source={require('../images/CSE.png')}
+              source={require('../images/boy.png')}
             />
           </View>
           <View>
             <Text style={[styles.setColorWhite, styles.setBold]}>
-              Club scientifique de l'ESI
-            </Text>
-            <Text style={[styles.setColorWhite]}>Student community club</Text>
+              Khaled Wari                     </Text>
+            <Text style={[styles.setColorWhite]}>1CS / Freelancer</Text>
           </View>
         </View>
         <Text
@@ -230,7 +229,7 @@ function Home() {
             fontWeight: '700'
           }}
         >
-          HACK-IT
+          Movie Night
         </Text>
         <Text
           style={{
@@ -238,7 +237,7 @@ function Home() {
             fontSize: 20
           }}
         >
-          Hackathon
+          Uncharted
         </Text>
         <View
           style={{
@@ -257,7 +256,7 @@ function Home() {
               }}
             >
               <Image source={require('../images/clock.png')} />
-              <Text style={[styles.setColorWhite]}>March 17th</Text>
+              <Text style={[styles.setColorWhite]}>March 6th  </Text>
             </View>
             <View
               style={{
@@ -269,7 +268,7 @@ function Home() {
               }}
             >
               <Image source={require('../images/location.png')} />
-              <Text style={[styles.setColorWhite]}>ESI, Algiers</Text>
+              <Text style={[styles.setColorWhite]}>Cosmos    </Text>
             </View>
           </View>
           <TouchableOpacity style={styles.buttonParticipate}>
